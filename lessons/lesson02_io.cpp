@@ -2,9 +2,9 @@
 
 #include <opencv2/imgproc.hpp>
 
-#include <chrono>
+#include <chrono> //时间处理
 #include <cmath>
-#include <thread>
+#include <thread> //图像处理
 
 namespace training::io {
 namespace {

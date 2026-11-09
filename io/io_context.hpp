@@ -2,14 +2,14 @@
 #include "config.hpp"
 #include "types.hpp"
 
-#include <builtin_interfaces/msg/time.hpp>
-#include <hnurm_interfaces/msg/vision_recv_data.hpp>
-#include <hnurm_interfaces/msg/vision_send_data.hpp>
+#include <builtin_interfaces/msg/time.hpp> //ros2标准时间格式
+#include <hnurm_interfaces/msg/vision_recv_data.hpp> //自定义接受数据结构
+#include <hnurm_interfaces/msg/vision_send_data.hpp> //自定义发送数据结构
 #include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/image.hpp>
+#include <sensor_msgs/msg/image.hpp> //标准图像传输格式
 
-#include <mutex>
-#include <optional>
+#include <mutex> //互斥锁
+#include <optional> //可选类型
 
 namespace training::io {
 // 第 2 讲：仿真 IO。对外只暴露四个方法；对内负责 ROS2 通信、时间对齐与安全门控。
